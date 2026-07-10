@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎀 Для Саши — Квест с Сюрпризом 🎀</title>
+    <title>🎉 С Днём Рождения, Саша! 🎉</title>
     <style>
         * {
             margin: 0;
@@ -13,17 +13,16 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(145deg, #fce4ec, #f3e5f5, #fbe9e7, #fff3e0);
+            background: linear-gradient(145deg, #e0f7fa, #f1f8e9, #fce4ec, #f3e5f5);
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: 'Segoe UI', 'Quicksand', system-ui, -apple-system, sans-serif;
             padding: 16px;
             user-select: none;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" fill="rgba(255,182,193,0.7)"/><path d="M14 24 L6 30 L22 30 Z" fill="rgba(255,182,193,0.7)"/></svg>') 14 14, auto;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" fill="rgba(129,199,132,0.5)"/><path d="M14 24 L6 30 L22 30 Z" fill="rgba(129,199,132,0.5)"/></svg>') 14 14, auto;
         }
 
-        /* === ФОН С ЦВЕТАМИ И БАБОЧКАМИ === */
         #background {
             position: fixed;
             top: 0;
@@ -38,9 +37,9 @@
         .flower {
             position: absolute;
             font-size: 2.8rem;
-            opacity: 0.2;
-            animation: floatFlower 18s infinite alternate ease-in-out;
-            filter: drop-shadow(0 8px 20px rgba(255, 105, 180, 0.1));
+            opacity: 0.15;
+            animation: floatFlower 20s infinite alternate ease-in-out;
+            filter: drop-shadow(0 8px 20px rgba(129, 199, 132, 0.1));
         }
 
         @keyframes floatFlower {
@@ -51,8 +50,8 @@
         .butterfly {
             position: absolute;
             font-size: 2.2rem;
-            opacity: 0.25;
-            animation: flyButterfly 25s infinite alternate ease-in-out;
+            opacity: 0.2;
+            animation: flyButterfly 28s infinite alternate ease-in-out;
         }
 
         @keyframes flyButterfly {
@@ -65,16 +64,15 @@
             position: absolute;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.15);
-            box-shadow: inset 0 0 30px rgba(255, 182, 193, 0.1);
-            animation: bubbleFloat 20s infinite alternate ease-in-out;
+            box-shadow: inset 0 0 30px rgba(129, 199, 132, 0.1);
+            animation: bubbleFloat 22s infinite alternate ease-in-out;
         }
 
         @keyframes bubbleFloat {
-            0% { transform: translateY(0) scale(1); opacity: 0.15; }
-            100% { transform: translateY(-120px) scale(1.6); opacity: 0.05; }
+            0% { transform: translateY(0) scale(1); opacity: 0.12; }
+            100% { transform: translateY(-120px) scale(1.6); opacity: 0.04; }
         }
 
-        /* === КАРТОЧКА === */
         .card {
             position: relative;
             z-index: 1;
@@ -83,8 +81,8 @@
             -webkit-backdrop-filter: blur(20px);
             padding: 30px 22px 22px;
             border-radius: 60px 60px 40px 40px;
-            border: 2px solid rgba(255, 182, 193, 0.2);
-            box-shadow: 0 30px 70px rgba(255, 105, 180, 0.08), 0 10px 30px rgba(255, 182, 193, 0.05);
+            border: 2px solid rgba(129, 199, 132, 0.2);
+            box-shadow: 0 30px 70px rgba(129, 199, 132, 0.08), 0 10px 30px rgba(129, 199, 132, 0.05);
             text-align: center;
             max-width: 600px;
             width: 100%;
@@ -99,11 +97,11 @@
             right: -2px;
             bottom: -2px;
             border-radius: 62px 62px 42px 42px;
-            background: linear-gradient(45deg, #ffb6c1, #ff85a2, #ffb6c1, #ffc0cb, #ffb6c1);
+            background: linear-gradient(45deg, #81c784, #a5d6a7, #c8e6c9, #a5d6a7, #81c784);
             background-size: 400% 400%;
             z-index: -1;
             animation: borderGlow 6s ease infinite;
-            opacity: 0.3;
+            opacity: 0.25;
             filter: blur(10px);
         }
 
@@ -113,19 +111,18 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* === ШАПКА === */
         .title {
             font-size: 2.2rem;
             font-weight: 800;
-            color: #d6336c;
+            color: #388e3c;
             margin-bottom: 2px;
             letter-spacing: 1px;
-            text-shadow: 0 4px 20px rgba(214, 51, 108, 0.1);
+            text-shadow: 0 4px 20px rgba(56, 142, 60, 0.1);
         }
 
         .subtitle {
             font-size: 0.9rem;
-            color: #b56576;
+            color: #558b2f;
             font-weight: 500;
             margin-bottom: 10px;
             letter-spacing: 2px;
@@ -137,18 +134,17 @@
             border-radius: 40px;
             display: inline-block;
             margin-bottom: 12px;
-            border: 1px solid rgba(255, 182, 193, 0.2);
+            border: 1px solid rgba(129, 199, 132, 0.2);
             font-size: 1rem;
-            color: #7a4b5c;
+            color: #2e7d32;
         }
 
         .name-display span {
-            color: #d6336c;
+            color: #388e3c;
             font-weight: 700;
             font-size: 1.3rem;
         }
 
-        /* === ПРОГРЕСС === */
         .progress-container {
             margin: 8px 0 12px;
         }
@@ -156,16 +152,16 @@
         .progress-bar-bg {
             width: 100%;
             height: 10px;
-            background: rgba(255, 182, 193, 0.15);
+            background: rgba(129, 199, 132, 0.15);
             border-radius: 20px;
             overflow: hidden;
-            border: 1px solid rgba(255, 182, 193, 0.1);
+            border: 1px solid rgba(129, 199, 132, 0.1);
         }
 
         .progress-bar-fill {
             height: 100%;
             width: 0%;
-            background: linear-gradient(90deg, #ffb6c1, #ff85a2, #d6336c, #ffb6c1);
+            background: linear-gradient(90deg, #81c784, #a5d6a7, #388e3c, #81c784);
             background-size: 300% 100%;
             border-radius: 20px;
             transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -179,7 +175,7 @@
         }
 
         .progress-bar-fill::after {
-            content: '🌸';
+            content: '🎈';
             position: absolute;
             right: -6px;
             top: -10px;
@@ -195,19 +191,18 @@
         .progress-text {
             display: flex;
             justify-content: space-between;
-            color: #b56576;
+            color: #558b2f;
             font-size: 0.75rem;
             margin-top: 5px;
         }
 
         .progress-text .current {
-            color: #d6336c;
+            color: #388e3c;
             font-weight: 700;
         }
 
-        /* === ИСТОРИЯ === */
         .story-line {
-            color: #7a4b5c;
+            color: #2e7d32;
             font-size: 0.95rem;
             line-height: 1.8;
             margin: 6px 0 14px;
@@ -215,15 +210,15 @@
             padding: 8px 16px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 30px;
-            border: 1px solid rgba(255, 182, 193, 0.1);
+            border: 1px solid rgba(129, 199, 132, 0.1);
             transition: all 0.4s ease;
             text-align: center;
             font-weight: 500;
         }
 
-        .story-line .highlight { color: #d6336c; font-weight: 700; }
-        .story-line .highlight2 { color: #b56576; font-weight: 700; }
-        .story-line .highlight3 { color: #ff85a2; font-weight: 700; }
+        .story-line .highlight { color: #388e3c; font-weight: 700; }
+        .story-line .highlight2 { color: #558b2f; font-weight: 700; }
+        .story-line .highlight3 { color: #81c784; font-weight: 700; }
 
         .story-line .emoji-float {
             display: inline-block;
@@ -235,16 +230,15 @@
             100% { transform: translateY(-4px) rotate(3deg); }
         }
 
-        /* === ИГРОВАЯ ЗОНА === */
         .game-area {
             position: relative;
             height: 200px;
             margin: 6px 0 12px;
             border-radius: 40px;
             background: rgba(255, 255, 255, 0.15);
-            border: 2px solid rgba(255, 182, 193, 0.08);
+            border: 2px solid rgba(129, 199, 132, 0.08);
             overflow: hidden;
-            box-shadow: inset 0 0 60px rgba(255, 182, 193, 0.03);
+            box-shadow: inset 0 0 60px rgba(129, 199, 132, 0.03);
         }
 
         .game-area .pattern {
@@ -254,8 +248,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(255, 182, 193, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 20% 30%, rgba(129, 199, 132, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(129, 199, 132, 0.03) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -264,7 +258,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 182, 193, 0.05), transparent 70%);
+            background: radial-gradient(circle, rgba(129, 199, 132, 0.05), transparent 70%);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -277,7 +271,6 @@
             100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
         }
 
-        /* === КНОПКА-БЕГЛЕЦ === */
         #runBtn {
             position: absolute;
             top: 50%;
@@ -287,11 +280,11 @@
             font-size: 1rem;
             font-weight: 700;
             color: #fff;
-            background: linear-gradient(135deg, #ff85a2, #d6336c);
+            background: linear-gradient(135deg, #81c784, #388e3c);
             border: none;
             border-radius: 60px;
             cursor: pointer;
-            box-shadow: 0 8px 30px rgba(214, 51, 108, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);
+            box-shadow: 0 8px 30px rgba(56, 142, 60, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);
             transition: all 0.08s ease;
             white-space: nowrap;
             z-index: 10;
@@ -308,7 +301,7 @@
             right: -3px;
             bottom: -3px;
             border-radius: 63px;
-            background: linear-gradient(45deg, #ffb6c1, #ff85a2, #d6336c, #ffb6c1);
+            background: linear-gradient(45deg, #81c784, #a5d6a7, #388e3c, #81c784);
             background-size: 300% 300%;
             z-index: -1;
             animation: btnGlow 3s ease infinite;
@@ -324,8 +317,8 @@
 
         #runBtn:active { transform: translate(-50%, -50%) scale(0.92); }
         #runBtn.caught {
-            background: linear-gradient(135deg, #ffb6c1, #ff85a2);
-            box-shadow: 0 8px 40px rgba(255, 105, 180, 0.2);
+            background: linear-gradient(135deg, #81c784, #a5d6a7);
+            box-shadow: 0 8px 40px rgba(56, 142, 60, 0.2);
             cursor: default;
             animation: none;
             color: #fff;
@@ -341,25 +334,23 @@
             100% { opacity: 1; transform: scale(1.2); }
         }
 
-        /* === СТАТИСТИКА === */
         .stats {
             display: flex;
             justify-content: space-around;
             margin: 6px 0 10px;
-            color: #b56576;
+            color: #558b2f;
             font-size: 0.75rem;
         }
 
         .stats span {
-            color: #d6336c;
+            color: #388e3c;
             font-weight: 700;
             font-size: 1.1rem;
         }
 
-        .stats .heart-count span { color: #d6336c; }
-        .stats .msg-count span { color: #b56576; }
+        .stats .heart-count span { color: #388e3c; }
+        .stats .msg-count span { color: #558b2f; }
 
-        /* === КНОПКИ === */
         .controls {
             display: flex;
             gap: 8px;
@@ -372,9 +363,9 @@
             padding: 7px 18px;
             font-size: 0.75rem;
             font-weight: 600;
-            color: #7a4b5c;
+            color: #2e7d32;
             background: rgba(255, 255, 255, 0.3);
-            border: 1px solid rgba(255, 182, 193, 0.1);
+            border: 1px solid rgba(129, 199, 132, 0.1);
             border-radius: 40px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -383,29 +374,28 @@
         }
 
         .controls button:hover {
-            background: rgba(255, 182, 193, 0.1);
+            background: rgba(129, 199, 132, 0.1);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.05);
+            box-shadow: 0 8px 25px rgba(56, 142, 60, 0.05);
         }
 
-        /* === СЕКРЕТНОЕ СООБЩЕНИЕ === */
         .secret-message {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0) rotate(-8deg);
-            background: linear-gradient(135deg, #fff5f7, #ffffff);
+            background: linear-gradient(135deg, #f1f8e9, #ffffff);
             backdrop-filter: blur(20px);
             padding: 32px 30px 28px;
             border-radius: 50px;
-            border: 2px solid rgba(255, 182, 193, 0.2);
-            box-shadow: 0 30px 80px rgba(214, 51, 108, 0.08), 0 0 60px rgba(255, 182, 193, 0.05);
+            border: 2px solid rgba(129, 199, 132, 0.2);
+            box-shadow: 0 30px 80px rgba(56, 142, 60, 0.08), 0 0 60px rgba(129, 199, 132, 0.05);
             z-index: 2000;
             max-width: 440px;
             width: 92%;
             text-align: center;
             transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-            color: #4a2a36;
+            color: #1b5e20;
         }
 
         .secret-message.show {
@@ -427,7 +417,7 @@
         .secret-message .msg-title {
             font-size: 1.5rem;
             font-weight: 800;
-            color: #d6336c;
+            color: #388e3c;
             margin-bottom: 6px;
         }
 
@@ -435,14 +425,14 @@
             font-size: 1rem;
             line-height: 1.7;
             margin: 8px 0 14px;
-            color: #7a4b5c;
+            color: #2e7d32;
             padding: 0 6px;
         }
 
         .secret-message .msg-from {
             font-size: 0.85rem;
             font-weight: 600;
-            color: #b56576;
+            color: #558b2f;
             font-style: italic;
         }
 
@@ -452,20 +442,19 @@
             font-size: 1rem;
             font-weight: 700;
             color: #fff;
-            background: linear-gradient(135deg, #ff85a2, #d6336c);
+            background: linear-gradient(135deg, #81c784, #388e3c);
             border: none;
             border-radius: 60px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(214, 51, 108, 0.1);
+            box-shadow: 0 8px 25px rgba(56, 142, 60, 0.1);
         }
 
         .secret-message .close-msg:hover {
             transform: scale(1.04);
-            box-shadow: 0 8px 35px rgba(214, 51, 108, 0.15);
+            box-shadow: 0 8px 35px rgba(56, 142, 60, 0.15);
         }
 
-        /* === ОТКРЫТКА === */
         #cardOverlay {
             display: none;
             position: fixed;
@@ -492,13 +481,13 @@
         .birthday-card {
             max-width: 500px;
             width: 100%;
-            background: linear-gradient(145deg, #fff5f7, #ffeef2);
+            background: linear-gradient(145deg, #f1f8e9, #e8f5e9);
             border-radius: 60px;
             padding: 40px 30px 35px;
             text-align: center;
-            box-shadow: 0 40px 80px rgba(214, 51, 108, 0.05), 0 20px 60px rgba(255, 182, 193, 0.05);
+            box-shadow: 0 40px 80px rgba(56, 142, 60, 0.05), 0 20px 60px rgba(129, 199, 132, 0.05);
             animation: cardPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-            border: 2px solid rgba(255, 182, 193, 0.1);
+            border: 2px solid rgba(129, 199, 132, 0.1);
             position: relative;
             overflow: hidden;
         }
@@ -517,13 +506,13 @@
         .birthday-card .card-title {
             font-size: 2.4rem;
             font-weight: 800;
-            color: #d6336c;
+            color: #388e3c;
             margin-bottom: 2px;
         }
 
         .birthday-card .card-subtitle {
             font-size: 1rem;
-            color: #b56576;
+            color: #558b2f;
             font-weight: 500;
             margin-bottom: 8px;
         }
@@ -531,7 +520,7 @@
         .birthday-card .card-name {
             font-size: 2rem;
             font-weight: 800;
-            color: #d6336c;
+            color: #388e3c;
             margin-bottom: 10px;
             background: rgba(255, 255, 255, 0.4);
             padding: 4px 28px;
@@ -541,7 +530,7 @@
         }
 
         .birthday-card .card-message {
-            color: #7a4b5c;
+            color: #2e7d32;
             font-size: 1.05rem;
             line-height: 1.8;
             margin: 10px 0 16px;
@@ -549,7 +538,7 @@
         }
 
         .birthday-card .card-message .heart {
-            color: #d6336c;
+            color: #388e3c;
             display: inline-block;
             animation: heartbeat 1s infinite;
         }
@@ -565,31 +554,30 @@
             font-size: 1rem;
             font-weight: 700;
             color: #fff;
-            background: linear-gradient(135deg, #ff85a2, #d6336c);
+            background: linear-gradient(135deg, #81c784, #388e3c);
             border: none;
             border-radius: 60px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(214, 51, 108, 0.1);
+            box-shadow: 0 8px 25px rgba(56, 142, 60, 0.1);
         }
 
         .birthday-card .close-card:hover {
             transform: scale(1.04);
-            box-shadow: 0 8px 35px rgba(214, 51, 108, 0.15);
+            box-shadow: 0 8px 35px rgba(56, 142, 60, 0.15);
         }
 
-        /* === ЗАПИСКА ОТ КОСТИ === */
         #kostyaNote {
             display: block;
             position: fixed;
             bottom: 22px;
             right: 22px;
-            background: linear-gradient(135deg, #ffb6c1, #ff85a2);
-            color: #fff;
+            background: linear-gradient(135deg, #81c784, #a5d6a7);
+            color: #1b5e20;
             padding: 16px 22px;
             border-radius: 30px;
             border: 2px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 15px 40px rgba(214, 51, 108, 0.1);
+            box-shadow: 0 15px 40px rgba(56, 142, 60, 0.1);
             z-index: 100;
             max-width: 240px;
             font-size: 0.9rem;
@@ -627,11 +615,10 @@
             font-size: 1rem;
             display: block;
             margin-top: 3px;
-            color: #fff;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            color: #1b5e20;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.03);
         }
 
-        /* === ХИНТ === */
         .hint-popup {
             position: fixed;
             top: 20px;
@@ -639,10 +626,10 @@
             transform: translateX(-50%);
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(16px);
-            color: #7a4b5c;
+            color: #2e7d32;
             padding: 14px 28px;
             border-radius: 40px;
-            border: 1px solid rgba(255, 182, 193, 0.1);
+            border: 1px solid rgba(129, 199, 132, 0.1);
             z-index: 999;
             font-size: 0.95rem;
             animation: slideDown 0.4s ease;
@@ -666,7 +653,6 @@
             100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
         }
 
-        /* === АДАПТИВ === */
         @media (max-width: 550px) {
             .card { padding: 20px 14px 16px; }
             .title { font-size: 1.8rem; }
@@ -689,28 +675,24 @@
 </head>
 <body>
 
-    <!-- === ФОН С ЦВЕТАМИ И БАБОЧКАМИ === -->
     <div id="background">
         <div class="flower" style="top:5%;left:5%;animation-delay:0s;">🌸</div>
-        <div class="flower" style="top:15%;right:8%;animation-delay:2s;">🌷</div>
+        <div class="flower" style="top:15%;right:8%;animation-delay:2s;">🌼</div>
         <div class="flower" style="bottom:20%;left:3%;animation-delay:4s;">🌺</div>
-        <div class="flower" style="bottom:8%;right:5%;animation-delay:1s;">🌹</div>
-        <div class="flower" style="top:45%;left:2%;animation-delay:3s;">🌼</div>
-        <div class="flower" style="top:50%;right:2%;animation-delay:5s;">🌻</div>
-
+        <div class="flower" style="bottom:8%;right:5%;animation-delay:1s;">🌷</div>
+        <div class="flower" style="top:45%;left:2%;animation-delay:3s;">🌻</div>
+        <div class="flower" style="top:50%;right:2%;animation-delay:5s;">🌹</div>
         <div class="butterfly" style="top:10%;left:20%;animation-delay:0s;">🦋</div>
         <div class="butterfly" style="bottom:15%;right:15%;animation-delay:3s;">🦋</div>
         <div class="butterfly" style="top:40%;left:40%;animation-delay:6s;">🦋</div>
-
         <div class="bubble" style="width:200px;height:200px;top:10%;left:20%;"></div>
         <div class="bubble" style="width:300px;height:300px;bottom:5%;right:5%;"></div>
         <div class="bubble" style="width:150px;height:150px;top:50%;left:60%;"></div>
     </div>
 
-    <!-- === КАРТОЧКА === -->
     <div class="card">
-        <div class="title">🌸 С Днём Рождения! 🌸</div>
-        <div class="subtitle">✨ Поймай своё Счастье ✨</div>
+        <div class="title">🎉 С Днём Рождения! 🎉</div>
+        <div class="subtitle">✨ Твой брат Костик приготовил сюрприз ✨</div>
 
         <div class="name-display">
             🎀 Для <span id="nameDisplay">[Имя]</span> с любовью
@@ -727,61 +709,59 @@
         </div>
 
         <div class="story-line" id="storyLine">
-            <span class="emoji-float">🌸</span> Сегодня твой особенный день!
-            <span class="highlight">Счастье</span> прячется в цветах...
-            У тебя <span class="highlight3">20 попыток</span>, чтобы его поймать!
+            <span class="emoji-float">🎁</span> Нажми на кнопку —
+            <span class="highlight">подарок</span> спрятан внутри...
+            У тебя <span class="highlight3">20 попыток</span>, чтобы его найти!
         </div>
 
         <div class="stats">
             <div class="heart-count">❤️ <span id="heartCount">0</span></div>
             <div>🎀 <span id="escapeCount">0</span>/20</div>
             <div class="msg-count">💌 <span id="msgCount">0</span></div>
-            <div>💫 <span id="comboCount">0</span>x</div>
         </div>
 
         <div class="game-area" id="gameArea">
             <div class="pattern"></div>
             <div class="glow-ring"></div>
-            <button id="runBtn"><span class="btn-sparkle">✨</span> Лови! <span class="btn-sparkle">✨</span></button>
+            <button id="runBtn"><span class="btn-sparkle">✨</span> Нажми! <span class="btn-sparkle">✨</span></button>
         </div>
 
         <div class="controls">
-            <button id="resetBtn">🔄 Начать заново</button>
+            <button id="resetBtn">🔄 Заново</button>
             <button id="musicBtn">🔇 Тишина</button>
         </div>
     </div>
 
-    <!-- === ЗАПИСКА ОТ КОСТИ === -->
     <div id="kostyaNote">
         <span class="note-icon">💌</span>
-        Костик на связи!<br>
-        <span style="font-size:0.9rem;">"Каждые 3 нажатия — сюрприз! Ищи комбо! 💖"</span>
-        <span class="note-name">— Твой Костик ❤️</span>
+        Привет, сестрёнка!<br>
+        <span style="font-size:0.9rem;">"Каждые 3 нажатия — сюрприз! 💖"</span>
+        <span class="note-name">— Твой брат Костик ❤️</span>
     </div>
 
-    <!-- === СЕКРЕТНОЕ СООБЩЕНИЕ === -->
     <div class="secret-message" id="secretMessage">
         <span class="msg-icon" id="msgIcon">💌</span>
         <div class="msg-title" id="msgTitle">Секретное послание!</div>
         <div class="msg-text" id="msgText">Текст сообщения</div>
-        <div class="msg-from" id="msgFrom">— От Костика с любовью ❤️</div>
+        <div class="msg-from" id="msgFrom">— От твоего брата с любовью ❤️</div>
         <button class="close-msg" onclick="closeSecretMessage()">💖 Прочитала!</button>
     </div>
 
-    <!-- === ОТКРЫТКА === -->
     <div id="cardOverlay">
         <div class="birthday-card">
-            <div class="card-emoji">🎀🌸🎀</div>
-            <div class="card-title">С Днём Рождения!</div>
-            <div class="card-subtitle">Ты — самая прекрасная!</div>
+            <div class="card-emoji">🎂🎉🎁</div>
+            <div class="card-title">С Днём Рождения, Сестрёнка!</div>
+            <div class="card-subtitle">Ты — самая лучшая сестра на свете!</div>
             <div class="card-name" id="cardName">[Имя]</div>
             <div class="card-message" id="cardMessage">
-                Ты поймала своё <span class="heart">❤️</span> Счастье!<br>
-                Пусть каждый день будет таким же тёплым<br>
-                и красивым, как твоя улыбка! <span class="heart">❤️</span>
+                Ты поймала мой <span class="heart">❤️</span> подарок!<br>
+                Пусть каждый день будет таким же ярким<br>
+                и счастливым, как этот праздник! <span class="heart">❤️</span>
+                <br><br>
+                <span style="font-size:1.2rem; color:#388e3c;">Я тебя очень люблю, Сашенька! С днём рождения!</span>
             </div>
-            <div class="card-emoji">🎂🎈🎁</div>
-            <button class="close-card" onclick="closeCard()">💖 Спасибо!</button>
+            <div class="card-emoji">🌷🌺🌼</div>
+            <button class="close-card" onclick="closeCard()">💖 Спасибо, братик!</button>
         </div>
     </div>
 
@@ -789,43 +769,43 @@
         // ============================================
         // === НАСТРОЙКИ ===
         const NAME = 'Саша'; // ⬅️ ИМЯ СЕСТРЫ
-        const MAX_ATTEMPTS = 20; // ⬅️ 20 ПОПЫТОК
+        const MAX_ATTEMPTS = 20;
 
         // === СООБЩЕНИЯ (каждое 3-е нажатие) ===
         const secretMessages = [
-            { icon: '💌', title: 'Костик шепчет...', text: 'Ты — моя суперзвезда! Сияй ярче всех цветов! ✨' },
-            { icon: '😂', title: 'Костик улыбается...', text: 'Эта кнопка думала, что сможет убежать от ТЕБЯ? Ха-ха! 🤣' },
-            { icon: '🔥', title: 'Горячее сообщение!', text: 'Ты настолько крутая, что даже ветер тебя не догонит! 💨' },
-            { icon: '💪', title: 'Сила внутри тебя!', text: 'Ты — цветочная воительница! Никакая кнопка не устоит! 💪❤️' },
-            { icon: '🎁', title: 'Подарочек!', text: 'Держи виртуальный букет! 🌸 Ты его заслужила! (Реальный ждёт на Земле 😉)' },
-            { icon: '💖', title: 'От всего сердца!', text: 'Ты — лучшее, что случилось в моей жизни. С Днём Рождения, родная! ❤️' },
-            { icon: '🌟', title: 'Звёздный час!', text: 'Сегодня ты — главная звезда! Пусть весь мир знает! ⭐' },
-            { icon: '🤗', title: 'Обнимашки!', text: 'Отправляю тебе самые тёплые объятия! 🤗 Ты справишься!' },
-            { icon: '🎉', title: 'Финальный аккорд!', text: 'Это последнее секретное сообщение! Ты почти победила! 🎉' },
+            { icon: '🌟', title: 'Брат гордится тобой!', text: 'Ты — самая крутая сестра на свете! Знай это! ✨' },
+            { icon: '😂', title: 'Брат улыбается...', text: 'Ха-ха! Эта кнопка думала, что убежит от ТЕБЯ? Не на ту напала! 😄' },
+            { icon: '🎈', title: 'Воздушный шарик!', text: 'Держи виртуальный шарик! 🎈 Тепрь он твой хаха!' },
+            { icon: '💪', title: 'Ты — сила!', text: 'Ты — супергероиня! Никакая кнопка не устоит перед тобой! 💪❤️' },
+            { icon: '🎁', title: 'Подарочек!', text: 'Вот тебе виртуальный подарок! 🎁 А настоящий я не придумал))))))Прости!' },
+            { icon: '💖', title: 'От всего сердца!', text: 'Ты — лучшая. Спасибо, что ты моя сестра! ❤️' },
+            { icon: '🌟', title: 'Ты — звезда!', text: 'Ты — главная звезда небе! Пусть весь мир знает! ⭐' },
+            { icon: '🤗', title: 'Обнимашки от брата!', text: 'Отправляю тебе самые тёплые объятия! 🤗 Ты справишься!' },
+            { icon: '🎉', title: 'Финал!', text: 'Это последнее секретное сообщение! Ты почти победила! 🎉' },
             { icon: '🌺', title: 'Цветочная магия!', text: 'Даже розы завидуют твоей красоте и настойчивости! Ты — легенда! 😎' },
-            { icon: '🚀', title: 'Полёт нормальный!', text: 'Ты набираешь высоту! Ещё немного — и ты в цветущем саду! 🌸' },
-            { icon: '✨', title: 'Секрет Вселенной!', text: 'Главный секрет: ты — самая лучшая! А кнопка просто боится твоей крутости! 😏' }
+            { icon: '💫', title: 'Полёт нормальный!', text: 'Ты набираешь высоту! Ещё немного — и ты в цветущем саду! 🌸' },
+            { icon: '✨', title: 'Секрет Вселенной!', text: 'Главный секрет: ты — самая лучшая сестра на свете! А кнопка просто боится твоей крутости! 😏' }
         ];
 
         // === ТЕКСТЫ КНОПКИ ===
         const buttonTexts = [
-            '🌷 Ой! Почти поймала!',
+            '🎈 Ой! Почти поймала!',
             '🌸 Хе-хе, я улизнула!',
             '😜 Догоняй в цветах!',
             '🏃‍♀️ Убегаю в сад!',
             '😏 Ты медленная!',
             '😂 Ха-ха! Не поймаешь!',
-            '✨ Я — цветок! Не поймать!',
+            '✨ Я — подарок! Не поймать!',
             '💫 Фьють! И нет меня!',
             '🎯 Ещё чуть-чуть!',
             '🔥 ПОСЛЕДНЯЯ ПОПЫТКА!',
-            '🌷 Ой! Почти поймала!',
+            '🎈 Ой! Почти поймала!',
             '🌸 Хе-хе, я улизнула!',
             '😜 Догоняй в цветах!',
             '🏃‍♀️ Убегаю в сад!',
             '😏 Ты медленная!',
             '😂 Ха-ха! Не поймаешь!',
-            '✨ Я — цветок! Не поймать!',
+            '✨ Я — подарок! Не поймать!',
             '💫 Фьють! И нет меня!',
             '🎯 Ещё чуть-чуть!',
             '🔥 ПОСЛЕДНЯЯ ПОПЫТКА!'
@@ -833,26 +813,26 @@
 
         // === ФРАЗЫ ДЛЯ ИСТОРИИ ===
         const storyPhrases = [
-            '🌸 <span class="highlight">Счастье</span> улетело в сад! Но ты — <span class="highlight2">цветочная охотница</span>!',
-            '💫 <span class="highlight2">Ты — именинница!</span> Ты сильнее <span class="highlight">ветра</span>!',
-            '🌷 <span class="highlight">Счастье</span> на поляне! Но ты его догонишь!',
-            '✨ <span class="highlight2">Костик</span> смотрит на тебя с улыбкой! <span class="highlight">Счастье</span> будет твоим!',
-            '🌺 Ты — <span class="highlight2">звезда</span> этого дня! <span class="highlight">Счастье</span> сдастся!',
-            '💖 <span class="highlight">Счастье</span> любит настойчивых! А ты — <span class="highlight2">самая настойчивая</span>!',
-            '🌟 <span class="highlight">Счастье</span> устало бегать по саду! Ещё немного!',
-            '🎯 <span class="highlight">Счастье</span> дразнит тебя... Но <span class="highlight2">ты — лучшая</span>!',
-            '🔥 <span class="highlight3">ПОСЛЕДНЯЯ ПОПЫТКА!</span> Давай, <span class="highlight2">именинница</span>!',
-            '🎉 ТЫ ПОБЕДИЛА! <span class="highlight">СЧАСТЬЕ</span> ТВОЁ! 🎉',
-            '🌸 <span class="highlight">Счастье</span> улетело в сад! Но ты — <span class="highlight2">цветочная охотница</span>!',
-            '💫 <span class="highlight2">Ты — именинница!</span> Ты сильнее <span class="highlight">ветра</span>!',
-            '🌷 <span class="highlight">Счастье</span> на поляне! Но ты его догонишь!',
-            '✨ <span class="highlight2">Костик</span> смотрит на тебя с улыбкой! <span class="highlight">Счастье</span> будет твоим!',
-            '🌺 Ты — <span class="highlight2">звезда</span> этого дня! <span class="highlight">Счастье</span> сдастся!',
-            '💖 <span class="highlight">Счастье</span> любит настойчивых! А ты — <span class="highlight2">самая настойчивая</span>!',
-            '🌟 <span class="highlight">Счастье</span> устало бегать по саду! Ещё немного!',
-            '🎯 <span class="highlight">Счастье</span> дразнит тебя... Но <span class="highlight2">ты — лучшая</span>!',
-            '🔥 <span class="highlight3">ПОСЛЕДНЯЯ ПОПЫТКА!</span> Давай, <span class="highlight2">именинница</span>!',
-            '🎉 ТЫ ПОБЕДИЛА! <span class="highlight">СЧАСТЬЕ</span> ТВОЁ! 🎉'
+            '🎁 <span class="highlight">Подарок</span> убежал в сад! Но ты — <span class="highlight2">обязательно поймаешь его</span>!',
+            '💫 <span class="highlight2">Ты — моя любимая сестра!</span> Ты сильнее <span class="highlight">всех</span>!',
+            '🎁 <span class="highlight">Подарок</span> на поляне! Но ты его догонишь!',
+            '✨ <span class="highlight2">Костик</span> смотрит на тебя с улыбкой! <span class="highlight">Подарок</span> будет твоим!',
+            '🌺 Ты — <span class="highlight2">звезда</span>! <span class="highlight">Подарок</span> сдастся!',
+            '💖 <span class="highlight">Подарок</span> любит настойчивых! А ты — <span class="highlight2">самая настойчивая</span>!',
+            '🌟 <span class="highlight">Подарок</span> устал бегать по саду! Ещё немного!',
+            '🎯 <span class="highlight">Подарок</span> дразнит тебя... Но <span class="highlight2">ты — лучшая</span>!',
+            '🔥 <span class="highlight3">ПОСЛЕДНЯЯ ПОПЫТКА!</span> Давай, <span class="highlight2">моя любимая сестра</span>!',
+            '🎉 ТЫ ПОБЕДИЛА! <span class="highlight">ПОДАРОК</span> ТВОЙ! 🎉',
+            '🎁 <span class="highlight">Подарок</span> убежал в сад! Но ты — <span class="highlight2">настоящая</span>!',
+            '💫 <span class="highlight2">Ты — моя любимая сестра!</span> Ты сильнее <span class="highlight">ветра</span>!',
+            '🎁 <span class="highlight">Подарок</span> на поляне! Но ты его догонишь!',
+            '✨ <span class="highlight2">Костик</span> смотрит на тебя с улыбкой! <span class="highlight">Подарок</span> будет твоим!',
+            '🌺 Ты — <span class="highlight2">звезда</span> моего сердца! <span class="highlight">Подарок</span> сдастся!',
+            '💖 <span class="highlight">Подарок</span> любит настойчивых! А ты — <span class="highlight2">самая настойчивая</span>!',
+            '🌟 <span class="highlight">Подарок</span> устал бегать по саду! Ещё немного!',
+            '🎯 <span class="highlight">Подарок</span> дразнит тебя... Но <span class="highlight2">ты — лучшая</span>!',
+            '🔥 <span class="highlight3">ПОСЛЕДНЯЯ ПОПЫТКА!</span> Давай, <span class="highlight2">моя любимая сестра</span>!',
+            '🎉 ТЫ ПОБЕДИЛА! <span class="highlight">ПОДАРОК</span> ТВОЙ! 🎉'
         ];
 
         // === ЭЛЕМЕНТЫ ===
@@ -867,7 +847,6 @@
         const heartSpan = document.getElementById('heartCount');
         const escapeSpan = document.getElementById('escapeCount');
         const msgSpan = document.getElementById('msgCount');
-        const comboSpan = document.getElementById('comboCount');
         const cardOverlay = document.getElementById('cardOverlay');
         const cardName = document.getElementById('cardName');
         const nameDisplay = document.getElementById('nameDisplay');
@@ -888,8 +867,6 @@
         let hearts = 0;
         let msgCount = 0;
         let msgIndex = 0;
-        let combo = 0;
-        let maxCombo = 0;
         let audio = null;
         let musicPlaying = false;
         let isCardOpen = false;
@@ -935,7 +912,6 @@
             progressPercent.textContent = Math.round(percent) + '%';
             attemptDisplay.textContent = escapes;
             escapeSpan.textContent = escapes;
-            comboSpan.textContent = combo;
         }
 
         // === ДВИЖЕНИЕ КНОПКИ ===
@@ -973,7 +949,7 @@
             msgIcon.textContent = msg.icon;
             msgTitle.textContent = msg.title;
             msgText.textContent = msg.text;
-            msgFrom.textContent = '— От Костика с любовью ❤️';
+            msgFrom.textContent = '— От твоего брата с любовью ❤️';
 
             secretMsg.classList.add('show');
             msgCount++;
@@ -994,10 +970,6 @@
             if (isCaught || isCardOpen || isMsgOpen) return;
 
             attempts++;
-            combo++;
-
-            if (combo > maxCombo) maxCombo = combo;
-            updateProgress();
 
             if (escapes >= MAX_ATTEMPTS) return;
 
@@ -1014,21 +986,12 @@
                 setTimeout(() => {
                     showSecretMessage();
                 }, 300);
-                combo = 0;
-                updateProgress();
             }
 
-            // Сердечки
+            // Сердечки за каждые 2 попытки
             if (escapes % 2 === 0 && escapes < MAX_ATTEMPTS) {
                 hearts++;
                 heartSpan.textContent = hearts;
-            }
-
-            // Бонус за комбо
-            if (combo >= 5 && escapes < MAX_ATTEMPTS) {
-                hearts += 2;
-                heartSpan.textContent = hearts;
-                showHint('🔥 Супер-комбо! +2 сердечка! Ты — цветочная легенда! 🌸');
             }
 
             if (escapes < MAX_ATTEMPTS) {
@@ -1055,7 +1018,7 @@
             btn.style.top = '50%';
             btn.style.transform = 'translate(-50%, -50%) scale(1.2)';
 
-            storyLine.innerHTML = '🌸 <span class="highlight">СЧАСТЬЕ</span> ПОЙМАНО В САДУ! 🌸<br>Ты — <span class="highlight2">САМАЯ КРУТАЯ</span> именинница! <span class="highlight3">🎉</span>';
+            storyLine.innerHTML = '🎁 <span class="highlight">ПОДАРОК</span> ПОЙМАН В САДУ! 🎁<br>Ты — <span class="highlight2">САМАЯ ЛУЧШАЯ СЕСТРА</span>! <span class="highlight3">🎉</span>';
 
             if (audio) audio.volume = 0.4;
 
@@ -1154,18 +1117,16 @@
             hearts = 0;
             msgCount = 0;
             msgIndex = 0;
-            combo = 0;
-            maxCombo = 0;
             heartSpan.textContent = '0';
             msgSpan.textContent = '0';
 
-            btn.textContent = '🌸 Лови!';
+            btn.textContent = '🎁 Нажми!';
             btn.classList.remove('caught');
             btn.style.left = '50%';
             btn.style.top = '50%';
             btn.style.transform = 'translate(-50%, -50%) scale(1)';
 
-            storyLine.innerHTML = '🌸 Сегодня твой особенный день! <span class="highlight">Счастье</span> прячется в цветах... У тебя <span class="highlight3">20 попыток</span>, чтобы его поймать!';
+            storyLine.innerHTML = '🎁 Нажми на кнопку — <span class="highlight">подарок</span> спрятан внутри... У тебя <span class="highlight3">20 попыток</span>, чтобы его найти!';
             
             updateProgress();
 
@@ -1190,7 +1151,7 @@
 
         // === КЛИК ПО ЗАПИСКЕ ===
         kostyaNote.addEventListener('click', function() {
-            showHint('💪 Костик сказал: "Каждые 3 нажатия — сюрприз! Ищи комбо-бонусы!" ❤️');
+            showHint('🎈 Костик сказал: "Каждые 3 нажатия — сюрприз! Ты справишься, сестрёнка!" ❤️');
         });
 
         // === ИНИЦИАЛИЗАЦИЯ ===
@@ -1199,7 +1160,6 @@
         btn.style.transform = 'translate(-50%, -50%)';
         updateProgress();
 
-        // === ПРИ РЕСАЙЗЕ ===
         window.addEventListener('resize', function() {
             if (!isCaught && !isCardOpen && escapes < MAX_ATTEMPTS) {
                 const area = gameArea.getBoundingClientRect();
@@ -1212,11 +1172,6 @@
                 }
             }
         });
-
-        console.log(`🌸 КВЕСТ ДЛЯ ${NAME} (20 попыток)!`);
-        console.log('💬 Каждые 3 нажатия — секретное сообщение от Костика!');
-        console.log('⚡ Собирай комбо для бонусов!');
-        console.log('🔥 Удачи, именинница!');
     </script>
 </body>
 </html>
