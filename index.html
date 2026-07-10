@@ -1,0 +1,95 @@
+<!-- === ФОН С ЦВЕТАМИ И БАБОЧКАМИ === -->
+    <div id="background">
+        <div class="flower" style="top:5%;left:5%;animation-delay:0s;">🌸</div>
+        <div class="flower" style="top:15%;right:8%;animation-delay:2s;">🌷</div>
+        <div class="flower" style="bottom:20%;left:3%;animation-delay:4s;">🌺</div>
+        <div class="flower" style="bottom:8%;right:5%;animation-delay:1s;">🌹</div>
+        <div class="flower" style="top:45%;left:2%;animation-delay:3s;">🌼</div>
+        <div class="flower" style="top:50%;right:2%;animation-delay:5s;">🌻</div>
+
+        <div class="butterfly" style="top:10%;left:20%;animation-delay:0s;">🦋</div>
+        <div class="butterfly" style="bottom:15%;right:15%;animation-delay:3s;">🦋</div>
+        <div class="butterfly" style="top:40%;left:40%;animation-delay:6s;">🦋</div>
+
+        <div class="bubble" style="width:200px;height:200px;top:10%;left:20%;"></div>
+        <div class="bubble" style="width:300px;height:300px;bottom:5%;right:5%;"></div>
+        <div class="bubble" style="width:150px;height:150px;top:50%;left:60%;"></div>
+    </div>
+
+    <!-- === КАРТОЧКА === -->
+    <div class="card">
+        <div class="title">🌸 С Днём Рождения! 🌸</div>
+        <div class="subtitle">✨ Поймай своё Счастье ✨</div>
+
+        <div class="name-display">
+            🎀 Для <span id="nameDisplay">[Имя]</span> с любовью
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">
+                <span>🎯 Попытка <span class="current" id="attemptDisplay">0</span>/20</span>
+                <span id="progressPercent">0%</span>
+            </div>
+        </div>
+
+        <div class="story-line" id="storyLine">
+            <span class="emoji-float">🌸</span> Сегодня твой особенный день!
+            <span class="highlight">Счастье</span> прячется в цветах...
+            У тебя <span class="highlight3">20 попыток</span>, чтобы его поймать!
+        </div>
+
+        <div class="stats">
+            <div class="heart-count">❤️ <span id="heartCount">0</span></div>
+            <div>🎀 <span id="escapeCount">0</span>/20</div>
+            <div class="msg-count">💌 <span id="msgCount">0</span></div>
+            <div>💫 <span id="comboCount">0</span>x</div>
+        </div>
+
+        <div class="game-area" id="gameArea">
+            <div class="pattern"></div>
+            <div class="glow-ring"></div>
+            <button id="runBtn"><span class="btn-sparkle">✨</span> Лови! <span class="btn-sparkle">✨</span></button>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn">🔄 Начать заново</button>
+            <button id="musicBtn">🔇 Тишина</button>
+        </div>
+    </div>
+
+    <!-- === ЗАПИСКА ОТ КОСТИ === -->
+    <div id="kostyaNote">
+        <span class="note-icon">💌</span>
+        Костик на связи!<br>
+        <span style="font-size:0.9rem;">"Каждые 3 нажатия — сюрприз! Ищи комбо! 💖"</span>
+        <span class="note-name">— Твой Костик ❤️</span>
+    </div>
+
+    <!-- === СЕКРЕТНОЕ СООБЩЕНИЕ === -->
+    <div class="secret-message" id="secretMessage">
+        <span class="msg-icon" id="msgIcon">💌</span>
+        <div class="msg-title" id="msgTitle">Секретное послание!</div>
+        <div class="msg-text" id="msgText">Текст сообщения</div>
+        <div class="msg-from" id="msgFrom">— От Костика с любовью ❤️</div>
+        <button class="close-msg" onclick="closeSecretMessage()">💖 Прочитала!</button>
+    </div>
+
+    <!-- === ОТКРЫТКА === -->
+    <div id="cardOverlay">
+        <div class="birthday-card">
+            <div class="card-emoji">🎀🌸🎀</div>
+            <div class="card-title">С Днём Рождения!</div>
+            <div class="card-subtitle">Ты — самая прекрасная!</div>
+            <div class="card-name" id="cardName">[Имя]</div>
+            <div class="card-message" id="cardMessage">
+                Ты поймала своё <span class="heart">❤️</span> Счастье!<br>
+                Пусть каждый день будет таким же тёплым<br>
+                и красивым, как твоя улыбка! <span class="heart">❤️</span>
+            </div>
+            <div class="card-emoji">🎂🎈🎁</div>
+            <button class="close-card" onclick="closeCard()">💖 Спасибо!</button>
+        </div>
+    </div>
